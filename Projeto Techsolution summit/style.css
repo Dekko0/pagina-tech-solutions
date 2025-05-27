@@ -1,4 +1,5 @@
 <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -192,28 +193,88 @@
 }
 
 
-.ilumination fieldset {
-  display: block;
-   width: 60%;
-   padding: auto;
-   margin: auto;
-   border-radius: 100px;
-   border-color: hsl(192, 100%, 76%);
-   box-shadow: 0 0 10px #00ccff, 0 0 20px #00ffcc;
-   transition: 0.3s;
-
-}
-
-
-fieldset {
+.ilumination{
   display: block;
    width: 60%;
    padding: auto;
    margin: auto;
    border-radius: 30px;
+   border-color: hsl(192, 100%, 76%);
+   box-shadow: 0 0 10px #00ccff, 0 0 20px #00ffcc;
    transition: 0.3s;
 }
 
 
 
+
+
+.navbar {
+  background-color: #333;
+  box-shadow: 0 0 10px #00ccff, 0 0 20px #00ffcc;
+  background: linear-gradient(90deg, #019678, #00ffea);
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li {
+  display: inline;
+  
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  transition: background-color 0.3s;
+  border-radius: 50px;
+}
+
+.navbar a:hover {
+  background: linear-gradient(90deg, #00ffea, #019678);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+input[type="text"],
+input[type="number"],
+input[type="radio"],
+input[type="date"],
+input[type="checkbox"] {
+  border: none; /* Remove a borda */
+  background: transparent; /* Remove o fundo */
+  outline: none; /* Remove o destaque ao focar */
+  color: #00ff66; /* Define a cor do texto */
+  font-size: 16px; /* Ajusta o tamanho do texto */
+  padding: 5px; /* Adiciona um pequeno espaçamento interno */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 16px; /* Ajusta o tamanho do botão de rádio/checkbox */
+  height: 16px;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
+input[type="date"]::placeholder {
+  color: #888; /* Define a cor do texto placeholder */
+  opacity: 0.7; /* Reduz a opacidade do placeholder */
+}
 </style>
