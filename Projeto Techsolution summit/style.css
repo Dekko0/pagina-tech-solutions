@@ -1,0 +1,219 @@
+<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #131546, #2e2c32);
+  margin: 0;
+  padding: 0;
+
+
+      color: white;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px;
+      gap: 50px;
+    }
+
+    .hero img {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+    }
+
+    .hero-text .data {
+      color: #00ff66;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-top: 20px;
+    }
+
+    .hero-text p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+    h3{
+      color: #00ff66;
+    }
+    p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 92%;
+    }
+    h4{
+      color: #00ff66;
+    }
+   
+ 
+
+.palestrantes-container {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 20px; /* espaço entre os itens */
+  max-width: 1000px; /* largura máxima do container */
+  margin: 0 auto; /* centraliza na página */
+}
+
+.palestrante {
+  flex: 1 1 30%; /* ocupa até 30% da largura, quebra linha se necessário */
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff; /* cor do texto, ajuste se quiser */
+}
+
+.palestrante img {
+  width: 100%; /* imagem ocupa toda largura do container do palestrante */
+  max-width: 180px; /* limita o tamanho máximo */
+  border-radius: 20%; /* cantos arredondados, opcional */
+  margin-bottom: 10px;
+}
+
+
+.btn-verde {
+  display: inline-block;
+  background-color: #00ff66;
+  color: #0b0c2a;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-verde:hover {
+  background-color: #00cc55;
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #0b0c2a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 4px solid #00ff66;
+  font-family: Arial, sans-serif;
+}
+
+
+.barra-luz {
+  height: 5px;
+  background: linear-gradient(to right, #00ff66, #0044ff, #00ff66);
+  animation: mover 3s infinite linear;
+}
+
+@keyframes mover {
+  0% { background-position: 0 0; }
+  100% { background-position: 200% 0; }
+}
+
+.rodape {
+  background: linear-gradient(to right, #0b0c2a, #00fd2a);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #00ff66;
+}
+
+.faq {
+  background-color: #0f112e;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+.faq h3 {
+  color: #00ff66;
+}
+
+
+.frase {
+  font-style: italic;
+  color: #00ff66;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+
+.linha-brilhante {
+  width: 300px;
+  height: 4px;
+  margin:12px auto 10;
+  background: linear-gradient(90deg, #00ffcc, #00ff66, #00ccff);
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ff66, 0 0 30px #00ccff;
+  border-radius: 2px;
+  animation: brilho 2s infinite alternate;
+}
+
+@keyframes brilho {
+  from {
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  to {
+    box-shadow: 0 0 20px #00ff66, 0 0 30px #00ccff;
+  }
+}
+
+.btn-inscricao {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #00ffcc, #00ccff);
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #00ccff, 0 0 20px #00ffcc;
+  transition: 0.3s;
+}
+.btn-inscricao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ccff;
+}
+
+
+.ilumination fieldset {
+  display: block;
+   width: 60%;
+   padding: auto;
+   margin: auto;
+   border-radius: 100px;
+   border-color: hsl(192, 100%, 76%);
+   box-shadow: 0 0 10px #00ccff, 0 0 20px #00ffcc;
+   transition: 0.3s;
+
+}
+
+
+fieldset {
+  display: block;
+   width: 60%;
+   padding: auto;
+   margin: auto;
+   border-radius: 30px;
+   transition: 0.3s;
+}
+
+
+
+</style>
